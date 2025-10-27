@@ -1,6 +1,8 @@
 build:
   packages:
-    - build-essential
+  - build-essential
+    - liblapack-dev
+    - libblas-dev
     - libjpeg-dev
     - zlib1g-dev
     - libfreetype6-dev
