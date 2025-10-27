@@ -1,0 +1,8 @@
+uild:
+  packages:
+    - build-essential
+    - libjpeg-dev
+    - zlib1g-dev
+    - libfreetype6-dev
+    - python3-dev
+``
