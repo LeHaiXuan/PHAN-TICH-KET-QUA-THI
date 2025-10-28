@@ -8,8 +8,5 @@ build:
     - libfreetype6-dev
     - python3-dev
 
-envVars:
-  - key: CFLAGS
-    value: "-std=c++17"
-
-startCommand: "pip install --upgrade pip setuptools wheel && streamlit run app.py"
+buildCommand: "export CFLAGS='-std=c++17' && pip install --upgrade pip setuptools wheel && pip install -r requirements.txt"
+startCommand: "streamlit run app.py"
