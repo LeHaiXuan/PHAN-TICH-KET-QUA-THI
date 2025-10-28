@@ -11,5 +11,5 @@ build:
 env:
   CFLAGS: "-std=c++17"
 
-buildCommand: "pip install --upgrade pip setuptools wheel && pip install --upgrade cython && pip install -r requirements.txt && pip install pandas --only-binary=:all:"
+buildCommand: "pip install --upgrade pip setuptools wheel && pip install --upgrade cython && pip install -r requirements.txt && pip install numpy --only-binary=:all: && pip install pandas --only-binary=:all:"
 startCommand: "streamlit run app.py --server.port $PORT --server.headless true"
