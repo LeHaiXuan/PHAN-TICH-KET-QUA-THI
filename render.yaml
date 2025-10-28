@@ -1,10 +1,11 @@
 build:
   packages:
-  - build-essential
+    - build-essential
     - liblapack-dev
     - libblas-dev
     - libjpeg-dev
     - zlib1g-dev
     - libfreetype6-dev
     - python3-dev
+
 startCommand: "pip install --upgrade pip setuptools wheel && streamlit run app.py"
